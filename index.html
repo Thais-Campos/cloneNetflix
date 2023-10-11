@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecalho">
+            <img id="logo-netflix" src="./img/netflix.svg" alt="logo-netflix">
+            <button id="botao-entrar">Entrar</button>
+                       
+        </div>
+
+        <div>
+            <h1>Filmes, séries e muito mais. Sem limites.</h1>
+            <p id="paragrafo-assita">Assista onde quiser. Cancele quando quiser.</p>
+            <p id="paragrafo-pronto"> Pronto para assistir? Informe seu email para criar ou reiniciar sua asinatura.
+            </p>
+
+            <div id="formulario">
+                <input placeholder="Email">
+                <button id="botao-email">Vamos lá <img src="./img/seta.svg" alt="seta"> </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <h2> Perguntas frequentes</h2>
+
+        <button id="botao-pergunta"> O que é Netflix?<img id="imagem-pergunta" src="./img/fechar.svg"> </button>
+        <div id="pergunta">
+            <p class="paragrafo-pergunta">A Netflix é um serviço de transmissão online que ofereceu uma ampla variedade
+                de séries, filmes e
+                documentários premiados em milhares de aparelhos conctados á internet. </p>
+            <br>
+            <p class="paragrafo-pergunta">Você pode assitir a quantos filmes e séries quiser, quando e onde quiser, sem
+                comerciais - tudo por um
+                preço
+                mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e
+                filmes.
+            </p>
+        </div>
+
+        <p>
+            <button id="botao-pergunta2"> Quanto custa a Netflix?<img id="imagem-pergunta2" src="./img/fechar.svg">
+            </button>
+        <div id="pergunta2">
+            <p class="paragrafo-pergunta2">Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho
+                de streaming por uma taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato
+                nem taxas extras.
+            </p>
+            </p>
+        </div>
+
+        <p>
+            <button id="botao-pergunta3"> Onde posso assistir?<img id="imagem-pergunta3" src="./img/fechar.svg">
+            </button>
+        <div id="pergunta3">
+            <p class="paragrafo-pergunta3">Assista onde quiser, quando quiser. Faça login com sua conta Netflix em
+                netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet
+                compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e
+                videogames.
+                <br>
+                Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10.
+                Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a
+                Netflix com você para qualquer lugar.
+            </p>
+            </p>
+        </div>
+
+        <p>
+            <button id="botao-pergunta4"> Como faço para cancelar?<img id="imagem-pergunta4" src="./img/fechar.svg">
+            </button>
+        <div id="pergunta4">
+            <p class="paragrafo-pergunta4">A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a
+                sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou
+                encerrar a sua assinatura a qualquer momento.
+            </p>
+            </p>
+        </div>
+
+
+        <p>
+            <button id="botao-pergunta5"> o que eu posso assistir na Netflix?<img id="imagem-pergunta5"
+                    src="./img/fechar.svg">
+            </button>
+        <div id="pergunta5">
+            <p class="paragrafo-pergunta5">A Netflix tem um grande catálogo de filmes, documentários, séries, originais
+                Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
+            </p>
+            </p>
+        </div>
+
+
+        <p>
+            <button id="botao-pergunta6"> A Netflix é adequada para crianças?<img id="imagem-pergunta6"
+                    src="./img/fechar.svg">
+            </button>
+        <div id="pergunta6">
+            <p class="paragrafo-pergunta6">A experiência infantil da Netflix faz parte da sua assinatura para que as
+                crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos pais.
+                <br>
+                O recurso de controle dos pais, incluso nos perfis para crianças e protegido por PIN, permite restringir
+                a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não
+                quer que elas assistam.
+            </p>
+            </p>
+        </div>
+
+</body>
+
+<script>
+
+    var botao = document.getElementById("botao-pergunta")
+    var menu = document.getElementById("pergunta")
+    var imagem = document.getElementById("imagem-pergunta")
+
+    function abrir() {
+
+        if (menu.style.display == "none") {
+            menu.style.display = "block"
+            imagem.id = "imagem-pergunta-girar"
+        }
+        else {
+            menu.style.display = "none"
+            imagem.id = "imagem-pergunta"
+        }
+    }
+
+    botao.addEventListener("click", abrir)
+
+    // começa o outro código 
+
+    var botao2 = document.getElementById("botao-pergunta2")
+    var menu2 = document.getElementById("pergunta2")
+    var imagem2 = document.getElementById("imagem-pergunta2")
+
+    function abrir2() {
+
+        if (menu2.style.display == "none") {
+            menu2.style.display = "block"
+            imagem2.id = "imagem-pergunta-girar2"
+        }
+        else {
+            menu2.style.display = "none"
+            imagem2.id = "imagem-pergunta2"
+        }
+    }
+
+    botao2.addEventListener("click", abrir2)
+    
+    // começa o outro código 
+
+    var botao3 = document.getElementById("botao-pergunta3")
+    var menu3 = document.getElementById("pergunta3")
+    var imagem3 = document.getElementById("imagem-pergunta3")
+
+    function abrir3() {
+
+        if (menu3.style.display == "none") {
+            menu3.style.display = "block"
+            imagem3.id = "imagem-pergunta-girar3"
+        }
+        else {
+            menu3.style.display = "none"
+            imagem3.id = "imagem-pergunta3"
+        }
+    }
+
+    botao3.addEventListener("click", abrir3)
+    
+    // começa o outro código 
+
+    var botao4 = document.getElementById("botao-pergunta4")
+    var menu4 = document.getElementById("pergunta4")
+    var imagem4 = document.getElementById("imagem-pergunta4")
+
+    function abrir4() {
+
+        if (menu4.style.display == "none") {
+            menu4.style.display = "block"
+            imagem4.id = "imagem-pergunta-girar4"
+        }
+        else {
+            menu4.style.display = "none"
+            imagem4.id = "imagem-pergunta4"
+        }
+    }
+
+    botao4.addEventListener("click", abrir4)
+
+    // começa o outro código 
+
+    var botao5 = document.getElementById("botao-pergunta5")
+    var menu5 = document.getElementById("pergunta5")
+    var imagem5 = document.getElementById("imagem-pergunta5")
+
+    function abrir5() {
+
+        if (menu5.style.display == "none") {
+            menu5.style.display = "block"
+            imagem5.id = "imagem-pergunta-girar5"
+        }
+        else {
+            menu5.style.display = "none"
+            imagem5.id = "imagem-pergunta5"
+        }
+    }
+
+    botao5.addEventListener("click", abrir5)
+
+     // começa o outro código 
+
+     var botao6 = document.getElementById("botao-pergunta6")
+    var menu6 = document.getElementById("pergunta6")
+    var imagem6 = document.getElementById("imagem-pergunta6")
+
+    function abrir6() {
+
+        if (menu6.style.display == "none") {
+            menu6.style.display = "block"
+            imagem6.id = "imagem-pergunta-girar6"
+        }
+        else {
+            menu6.style.display = "none"
+            imagem6.id = "imagem-pergunta6"
+        }
+    }
+
+    botao6.addEventListener("click", abrir6)
+    
+
+</script>
+
+</html>
